@@ -1,6 +1,25 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-</body>
+<div>
+    <app-nav-menu></app-nav-menu>
+</div>
+<div style="text-align:center">
+    <h1>Welcome to a repository of favorite eBooks</h1>
+    <img width="300" alt="Site Logo" src="/Images/ebooks logo.svg" />
+</div>
+<table class="table table-sm table-striped">
+    <tr>
+        <th>Title</th>
+        <td>{{book?.title}}</td>
+    </tr>
+    <tr>
+        <th>Category</th>
+        <td>{{book?.category}}</td>
+    </tr>
+    <tr>
+        <th>Summary</th>
+        <td>{{book?.summary}}</td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>{{book?.price}}</td>
+    </tr>
+</table>
